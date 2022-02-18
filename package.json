@@ -1,7 +1,7 @@
 {
   "name": "react-nextjs-snippets",
   "main": "./lib/react-nextjs-snippets",
-  "version": "0.0.0",
+  "version": "0.1.0",
   "description": "This is an extension for React and Next.js Snippets with Typescript support as well!",
   "keywords": [],
   "activationCommands": {
