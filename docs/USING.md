@@ -2,8 +2,8 @@
 
 # Installation
 
-- Install the VSCode extension
-- Reload VSCode
+- Install the Atom plugin
+- Reload Atom
 - Snippets are ready 🎉
 
 # Usage
