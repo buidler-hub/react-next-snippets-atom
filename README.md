@@ -1,110 +1,27 @@
-# Usage Guide
+# React and Next.js Snippets Atom
+
+React and Next.js Snippets with TypeScript support as well!🚀
+
+![Logo Showcase](https://user-images.githubusercontent.com/76690419/153743536-15a5218f-12fc-4f20-9557-9f79863ef5b8.png)
+
+<a href="https://www.producthunt.com/posts/react-and-next-js-snippets?utm_source=badge-featured&utm_medium=badge&utm_souce=badge-react-and-next-js-snippets" target="_blank"><img src="https://api.producthunt.com/widgets/embed-image/v1/featured.png?post_id=331596&theme=dark" alt="React and Next.js Snippets - React and Next.js snippets with TypeScript | Product Hunt" style="width: 250px; height: 54px;" width="250" height="54" /></a>
+<a href="https://www.producthunt.com/posts/react-and-next-js-snippets?utm_source=badge-top-post-badge&utm_medium=badge&utm_souce=badge-react-and-next-js-snippets" target="_blank"><img src="https://api.producthunt.com/widgets/embed-image/v1/top-post-badge.png?post_id=331596&theme=dark&period=daily" alt="React and Next.js Snippets - React and Next.js snippets with TypeScript | Product Hunt" style="width: 250px; height: 54px;" width="250" height="54" /></a>
 
 # Installation
 
-- Install the VSCode extension
-- Reload VSCode
+- Install the Atom plugin
+- Reload Atom
 - Snippets are ready 🎉
 
 # Usage
 
-## React
+All the snippets and using guide is given in the [USING Guide](./docs/USING.md)
 
-### JavaScript
+# Show your support
 
-1. `rimr` (Import React)
+Give a ⭐️ if this project helped you!
 
-   ```jsx
-   import React from 'react';
-   ```
+# 📝 License
 
-2. `rimrd` (Import ReactDOM)
-
-   ```jsx
-   import ReactDOM from 'react-dom';
-   ```
-
-3. `rimrs` (Import React and useState)
-
-   ```jsx
-   import React, { useState } from 'react';
-   ```
-
-4. `rimrse` (Import React, useState and useEffect)
-
-   ```jsx
-   import React, { useState, useEffect } from 'react';
-   ```
-
-5. `rfc` (React functional component)
-
-   ```jsx
-   const Component = () => {
-     return <div></div>;
-   };
-   export default Component;
-   ```
-
-6. `rue` (useEffect hook)
-
-   ```jsx
-   useEffect(() => {}, []);
-   ```
-
-7. `rus` (useState hook)
-
-   ```jsx
-   const [state, setState] = useState(initialValue);
-   ```
-
-8. `ruc` (useContext hook)
-
-   ```jsx
-   const value = useContext(myContext);
-   ```
-
-9. `rur` (useRef hook)
-
-   ```jsx
-   const refContainer = useRef(initialValue);
-   ```
-
-### TypeScript
-
-1. `rfcet` (React functional component)
-
-   ```tsx
-   import React from 'react';
-
-   interface Props {}
-
-   function Component({}: Props) {
-     return <div></div>;
-   }
-
-   export default Component;
-   ```
-
-2. `ruet` (useEffect hook)
-
-   ```tsx
-   useEffect(() => {}, []);
-   ```
-
-3. `rust` (useState hook)
-
-   ```tsx
-   const [state, setState] = useState(initialValue);
-   ```
-
-4. `ruct` (useContext hook)
-
-   ```tsx
-   const value = useContext(myContext);
-   ```
-
-5. `rurt` (useRef hook)
-
-   ```tsx
-   const refContainer = useRef(initialValue);
-   ```
+Copyright © 2022 [Avneesh Agarwal](https://github.com/avneesh0612).<br />
+This project is [GNU](https://github.com/avneesh0612/react-nextjs-snippets-atom/blob/main/LICENSE) licensed.
