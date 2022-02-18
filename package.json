@@ -1,0 +1,19 @@
+{
+  "name": "react-nextjs-snippets",
+  "main": "./lib/react-nextjs-snippets",
+  "version": "0.0.0",
+  "description": "This is an extension for React and Next.js Snippets with Typescript support as well!",
+  "keywords": [],
+  "activationCommands": {
+    "atom-workspace": "react-nextjs-snippets:toggle"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Kira272921/react-nextjs-snippets-atom.git"
+  },
+  "license": "MIT",
+  "engines": {
+    "atom": ">=1.0.0 <2.0.0"
+  },
+  "dependencies": {}
+}
