@@ -9,7 +9,7 @@ React and Next.js Snippets with TypeScript support as well!🚀
 
 # Installation
 
-- Install the Atom plugin
+- Install the [Atom plugin](https://atom.io/packages/react-nextjs-snippets)
 - Reload Atom
 - Snippets are ready 🎉
 
