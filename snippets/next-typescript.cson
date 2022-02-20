@@ -1,0 +1,85 @@
+".source.ts, .source.tsx":
+ 'Next.js get server side props':
+   'prefix': 'ngsst'
+   'body': """
+     export const getServerSideProps: GetServerSideProps = async (context) => {
+       return { props: {} };
+     };
+   """
+
+ 'Next.js get static props':
+   'prefix': 'ngspt'
+   'body': """
+     export const getStaticProps: getStaticProps = async (context) => {
+       return { props: {} };
+     };
+   """
+
+ 'Next.js page':
+   'prefix': 'npt'
+   'body': """
+     import type { NextPage } from "next";
+     const Page: NextPage = () => {
+       return <></>;
+     };
+     export default Page;
+   """
+
+ 'Next.js get initial props':
+   'prefix': 'ngipt'
+   'body': """
+     Page.getInitialProps = async (context) => {
+       return { props: {} };
+     };
+   """
+
+ 'Next.js component':
+   'prefix': 'nct'
+   'body': """
+     import type { NextComponentType, NextPageContext } from "next";
+     interface Props {}
+     const Component: NextComponentType<NextPageContext, {}, Props> = (
+       props: Props
+     ) => {
+       return <div></div>;
+     };
+     export default Component;
+   """
+
+ 'Next.js Get Static Path Typescript':
+   'prefix': 'ngspat'
+   'body': """
+     export const getStaticPaths: GetStaticPaths = async () => {
+       return {
+         paths:[${1}],
+         fallback:false
+       };
+     }
+   """
+
+ 'Next.js custom app':
+   'prefix': 'ncappt'
+   'body': """
+     const MyApp = ({ Component, pageProps }) => {
+       return <Component {...pageProps} />;
+     };
+     export default MyApp;
+   """
+
+ 'Next.js custom document':
+   'prefix': 'ncdoct'
+   'body': """
+     import Document, { Html, Main, NextScript } from "next/document";
+     const Document: Document = () => {
+       return (
+         <Html lang="en">
+           <body>
+             <Main />
+             <NextScript />
+           </body>
+         </Html>
+       );
+     };
+    
+     export default Document;
+   """

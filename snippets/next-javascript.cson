@@ -1,0 +1,59 @@
+".source.js, .source.jsx":
+ 'JavaScript: Next.js get server side props':
+  'prefix': 'ngss'
+  'body': """
+    export const getServerSideProps = async (context) => {
+      return {
+        props: {},
+      };
+    }; 
+  """
+
+ 'JavaScript: Next.js get static props':
+  'prefix': 'ngsp'
+  'body': """
+    export const getStaticProps = async (context) => {
+      return {
+        props: {},
+      };
+    };
+  """
+
+ 'Next.js get static path':
+  'prefix': 'ngspa'
+  'body': """
+    export const getStaticPaths = async () => {
+      return {
+          paths:[${1}],
+          fallback:false
+        };
+    };
+  """
+
+ 'Next.js custom app':
+  'prefix': 'ncapp'
+  'body': """
+    const MyApp = ({ Component, pageProps }) => {
+      return <Component {...pageProps} />;
+    };
+  
+    export default MyApp;
+  """
+
+ 'Next.js custom document':
+  'prefix': 'ncdoc'
+  'body': """
+    import Document, { Html, Main, NextScript } from "next/document";
+    const Document: Document = () => {
+      return (
+        <Html lang="en">
+          <body>
+            <Main />
+            <NextScript />
+          </body>
+        </Html>
+      );
+    };
+  
+    export default Document;
+  """  
