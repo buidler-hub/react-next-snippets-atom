@@ -108,3 +108,153 @@
    ```tsx
    const refContainer = useRef(initialValue);
    ```
+   
+   ## NextJS
+
+### JavaScript
+
+1.  `ngss` (Next.js get server side props)
+
+    ```jsx
+    export const getServerSideProps = async (context) => {
+      return {
+        props: {},
+      };
+    };
+    ```
+
+2.  `ngsp` (Next.js get static props)
+
+    ```jsx
+    export const getStaticProps = async (context) => {
+      return {
+        props: {},
+      };
+    };
+    ```
+
+3.  `ncapp` (Next.js custom app)
+
+    ```jsx
+    const MyApp = ({ Component, pageProps }) => {
+      return <Component {...pageProps} />;
+    };
+
+    export default MyApp;
+    ```
+
+4.  `ncdoc` (Next.js custom document)
+
+    ```jsx
+    import Document, { Html, Main, NextScript } from "next/document";
+    const Document: Document = () => {
+      return (
+        <Html lang="en">
+          <body>
+            <Main />
+            <NextScript />
+          </body>
+        </Html>
+      );
+    };
+
+    export default Document;
+    ```
+
+5.  `ngspa` (Next.js get static path)
+
+    ```jsx
+    export const getStaticPaths = async () => {
+      return {
+          paths:[${1}],
+          fallback:false
+        };
+    };
+    ```
+
+### TypeScript
+
+1. `ngsst` (Next.js get server side props)
+
+   ```tsx
+   export const getServerSideProps: GetServerSideProps = async (context) => {
+     return { props: {} };
+   };
+   ```
+
+2. `ngspt` (Next.js get static props)
+
+   ```tsx
+   export const getStaticProps: getStaticProps = async (context) => {
+     return { props: {} };
+   };
+   ```
+
+3. `npt` (Next.js page)
+
+   ```tsx
+   import type { NextPage } from "next";
+   const Page: NextPage = () => {
+     return <></>;
+   };
+   export default Page;
+   ```
+
+4. `ngipt` (Next.js get initial props)
+
+   ```tsx
+   Page.getInitialProps = async (context) => {
+     return { props: {} };
+   };
+   ```
+
+5. `nct` (Next.js component)
+
+   ```tsx
+   import type { NextComponentType, NextPageContext } from "next";
+   interface Props {}
+   const Component: NextComponentType<NextPageContext, {}, Props> = (
+     props: Props
+   ) => {
+     return <div></div>;
+   };
+   export default Component;
+   ```
+
+6. `ngspat` (Next.js Get Static Path Typescript)
+
+   ```tsx
+   export const getStaticPaths: GetStaticPaths = async () => {
+     return {
+       paths:[${1}],
+       fallback:false
+     };
+   }
+   ```
+
+7. `ncappt` (Next.js custom app)
+
+   ```tsx
+   const MyApp = ({ Component, pageProps }) => {
+     return <Component {...pageProps} />;
+   };
+   export default MyApp;
+   ```
+
+8. `ncdoct`(Next.js custom document)
+
+   ```tsx
+   import Document, { Html, Main, NextScript } from "next/document";
+   const Document: Document = () => {
+     return (
+       <Html lang="en">
+         <body>
+           <Main />
+           <NextScript />
+         </body>
+       </Html>
+     );
+   };
+
+   export default Document;
+   ```
